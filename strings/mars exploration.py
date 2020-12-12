@@ -1,7 +1,7 @@
-def alternatingCharacters(s):
+def marsExploration(s):
     count=0
-    for i in range(len(s)-1):
-        if s[i]==s[i+1]:
+    for i in range(len(s)):
+        if s[i]!='SOS'[i%3]:
             count+=1
     return count
-print(alternatingCharacters('SOSSOT'))
+print(marsExploration('SOSSOT'))
